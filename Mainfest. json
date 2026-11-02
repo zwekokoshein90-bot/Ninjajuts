@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "NinjaJutsu - Rasengan Camera",
+  "version": "1.0.0",
+  "description": "Advanced Rasengan camera effects for Google Meet",
+  "permissions": [
+    "camera"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
